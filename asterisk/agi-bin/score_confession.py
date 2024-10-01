@@ -6,7 +6,6 @@ import numpy as np
 from pydub import AudioSegment
 import os
 
-# Function to perform quantitative analysis on the confession WAV file
 def analyze_audio(file_path):
     # Load the audio file with librosa (WAV format)
     y, sr = librosa.load(file_path, sr=None)
@@ -20,7 +19,11 @@ def analyze_audio(file_path):
 
     # Analyze pitch variation
     pitches, magnitudes = librosa.core.piptrack(y=y, sr=sr)
-    pitch_values = [p for p in pitches if p > 0]
+
+    # Flatten the pitches array and filter for positive values
+    pitch_values = [pitches[i][j] for i in range(pitches.shape[0]) for j in range(pitches.shape[1]) if pitches[i][j] > 0]
+
+    # Calculate the standard deviation of pitch values if they exist
     pitch_variation = np.std(pitch_values) if pitch_values else 0
 
     # Analyze pauses (silences)
@@ -29,8 +32,10 @@ def analyze_audio(file_path):
 
     # Compute a simple "score" based on the metrics
     score = duration * (np.abs(loudness) + pitch_variation + num_silences)
-    
+
     return score
+
+
 
 def main():
     if len(sys.argv) != 2:
