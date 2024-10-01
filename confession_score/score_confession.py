@@ -27,7 +27,7 @@ def analyze_audio(file_path):
     return score, duration, loudness, pitch_variation, silence_frames
 
 # Example usage
-audio_file = "wormtel_alloy.wav"
+audio_file = "confession_1727745250.47.wav"
 score, duration, loudness, pitch_variation, silence_frames = analyze_audio(audio_file)
 print(f"Score: {score}, Duration: {duration}, Loudness: {loudness}, Pitch Variance: {pitch_variation}, Silences: {silence_frames}")
 
