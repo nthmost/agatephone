@@ -1,5 +1,13 @@
 # Agatephone Project: The California Zodiac of Death
 
+Imagine a rotary phone whose base and handset are made mostly out of solid agate.
+
+Now imagine this phone on a pedestal, surrounded by an ethereal glow.
+
+First you're going to have to learn (or remember) how to dial a rotary phone.  Maybe you dial 0, which takes you "the operator".  Maybe you dial 666, which takes you...somewhere else...
+
+The phone is a "portal" into an unseeable pocket universe, with its own rules, values, and priorities.
+
 ## For Artists and Patrons of the Arts
 
 The Agatephone is an interactive art installation that invites participants to explore themes of mortality, rebirth, and identity through the lens of California's ecosystem. Using a rotary phone and a receipt printer, visitors are drawn into a poetic experience that blends folklore with dark humor, offering a personalized “death horoscope” as a memento of the encounter.
@@ -8,9 +16,25 @@ The Agatephone is an interactive art installation that invites participants to e
 
 Agatephone combines a vintage rotary phone, Asterisk-powered telephony, and Python-driven dynamic horoscopes to create a captivating interactive piece. At its core, the project involves a unique "California Zodiac of Death," where customized horoscopes are generated based on participant input and printed on thermal receipt paper, blending analog devices with digital creativity.
 
+
+### Hardware
+
+* Minimal Linux box w/ low power draw
+* S100i (iaxy)
+* rotary phone
+* Bluetti EB3A power station
+* small USB thermal printer
+
+### Software
+
+* Asterisk
+* artery-thermal (github repo)
+* generated voice prompts via OpenAI TTS
+
+
 ## Project Overview
 
-The Agatephone Project is an interactive installation exploring life cycles and existential reflection through an evocative, humor-laden California-themed zodiac system. The experience is built around a reimagined astrological calendar—the “California Zodiac of Death”—where visitors receive a horoscope reflecting their “death sign,” personalized and printed on thermal paper for them to keep.
+The Agatephone Project is an interactive installation exploring life cycles and existential reflection through an evocative, morbid-humor-laden California-themed zodiac system. The experience is built around a reimagined astrological calendar—the “California Zodiac of Death”—where visitors receive a horoscope reflecting their “death sign,” personalized and printed on thermal paper for them to keep.
 
 ## Components
 
@@ -47,7 +71,7 @@ Each reading balances wry humor with introspection, offering a unique and slight
 
 ## Hardware Setup
 
-* Rotary phone (connected to an IAX or SIP adapter -- recommend ).
+* Rotary phone (connected to an IAX or SIP adapter -- recommend the S100i if you can find one).
 * Thermal receipt printer with Linux-compatible drivers.
 
 ## Software Requirements
@@ -61,11 +85,10 @@ Each reading balances wry humor with introspection, offering a unique and slight
 * Set up Asterisk with custom sound files and dialplan configuration.
 * Place death_horoscope.py in the appropriate directory and configure the AGI script trigger within Asterisk.
 * Ensure thermal printer connectivity and test printing functionality.
-* Usage
 
-## Run the Project
+## Interaction 
 
-* Dial into the Agatephone and follow the voice prompts to enter a “death day.”
+* Dial any 3 numbers on the rotary phone and follow the voice prompts to enter a “death day.”
 * Receive a personalized California Zodiac of Death horoscope printed on receipt paper.
 
 ## Horoscope Customization
