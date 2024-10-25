@@ -5,12 +5,9 @@ from artery import ConfessionReceipt, ReceiptImage, ReceiptText, CrazyText
 import random
 import os
 
-# from artery import pick_coupon
-
 LOGO = "/usr/share/asterisk/agatephone/elysiumbell_receipt_logo.png"
 COMPANY = "Elysium Bell"
 MOTTO = "Connecting Voices Across Eternity"
-
 
 POEM_DIR = "/usr/share/asterisk/agatephone/poems"
 
@@ -29,8 +26,6 @@ def print_receipt(receipt):
 
     printer.finish()
 
-# Example of how to use the ExperienceReceipt class and the print_receipt function
-
 
 def pick_poem(confession_score):
     poems = os.listdir(POEM_DIR)
@@ -38,9 +33,7 @@ def pick_poem(confession_score):
     return text
 
 
-
 def stripped_down_receipt(confession_score):
-
     poem = pick_poem(confession_score)
     receipt = ConfessionReceipt(experience_text=poem, logo=LOGO, title="YOUR PENANCE", 
                                 header="YOUR PENANCE", company="Elysium Bell", motto=MOTTO)
@@ -48,5 +41,6 @@ def stripped_down_receipt(confession_score):
     return receipt
 
 
+# decided not to bother actually scoring confessions, just picking a random poem works well enough. :-)
 print_receipt(stripped_down_receipt(100))
 
