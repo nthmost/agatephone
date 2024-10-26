@@ -6,6 +6,8 @@ Now imagine this phone on a pedestal, surrounded by an ethereal glow.
 
 First you're going to have to learn (or remember) how to dial a rotary phone.  Maybe you dial 0, which takes you "the operator".  Maybe you dial 666, which takes you...somewhere else...
 
+![An ornately hand-lettered paper sign says "Dial any 3 numbers. Confused? Find an adult!"](https://github.com/nthmost/agatephone/blob/main/EB_photos/instructions.jpg)
+
 The phone is a "portal" into an unseeable pocket universe, with its own rules, values, and priorities.
 
 ## For Artists and Patrons of the Arts
