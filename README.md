@@ -24,17 +24,16 @@ Agatephone combines a vintage rotary phone, Asterisk-powered telephony, and Pyth
 ### Hardware
 
 * Minimal Linux box w/ low power draw
-* S100i (iaxy)
+* [S100i (iaxy)](https://www.voipon.co.uk/documents/digium_iaxy_brochure.pdf)
 * rotary phone
 * Bluetti EB3A power station
 * small USB thermal printer
 
 ### Software
 
-* Asterisk
-* artery-thermal (github repo)
+* [Asterisk telephony OSS](https://www.asterisk.org/)
+* [nthmost/artery-thermal](https://github.com/nthmost/artery-thermal) (github repo)
 * generated voice prompts via OpenAI TTS
-
 
 ## Project Overview
 
