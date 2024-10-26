@@ -14,6 +14,8 @@ The phone is a "portal" into an unseeable pocket universe, with its own rules, v
 
 The Agatephone is an interactive art installation that invites participants to explore themes of mortality, rebirth, and identity through the lens of California's ecosystem. Using a rotary phone and a receipt printer, visitors are drawn into a poetic experience that blends folklore with dark humor, offering a personalized “death horoscope” as a memento of the encounter.
 
+![A warm candle illuminates a printed strip of receipt paper containing a Starfish and a horoscope for March 14th.](https://github.com/nthmost/agatephone/blob/main/EB_photos/horoscope_yellow.jpg)
+
 ## For Engineers and Tech Art Enthusiasts
 
 Agatephone combines a vintage rotary phone, Asterisk-powered telephony, and Python-driven dynamic horoscopes to create a captivating interactive piece. At its core, the project involves a unique "California Zodiac of Death," where customized horoscopes are generated based on participant input and printed on thermal receipt paper, blending analog devices with digital creativity.
