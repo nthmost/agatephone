@@ -115,6 +115,7 @@ reflective_questions = [
 # Generate a horoscope by combining phrases
 def generate_horoscope(date_str):
     # Parse the birthdate as month and day only
+    date_str = date_str.strip()
     month = int(date_str[:2])
     day = int(date_str[2:])
 

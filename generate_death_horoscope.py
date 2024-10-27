@@ -87,7 +87,7 @@ def sanitize_text(text):
 # Main function
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        date_str = sys.argv[1]
+        date_str = sys.argv[1].strip()
     else:
         date_str = input("Enter your birth date (MMDD): ")
 
@@ -97,5 +97,6 @@ if __name__ == "__main__":
     horoscope = generate_horoscope(date_str)
     horoscope = sanitize_text(horoscope)
     print_horoscope_to_receipt(month, day, horoscope) 
+    print(horoscope)
     log_horoscope(month, day, horoscope, success=True)
 
