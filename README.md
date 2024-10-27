@@ -6,11 +6,15 @@ Now imagine this phone on a pedestal, surrounded by an ethereal glow.
 
 First you're going to have to learn (or remember) how to dial a rotary phone.  Maybe you dial 0, which takes you "the operator".  Maybe you dial 666, which takes you...somewhere else...
 
+![An ornately hand-lettered paper sign says "Dial any 3 numbers. Confused? Find an adult!"](https://github.com/nthmost/agatephone/blob/main/EB_photos/instructions.jpg)
+
 The phone is a "portal" into an unseeable pocket universe, with its own rules, values, and priorities.
 
 ## For Artists and Patrons of the Arts
 
 The Agatephone is an interactive art installation that invites participants to explore themes of mortality, rebirth, and identity through the lens of California's ecosystem. Using a rotary phone and a receipt printer, visitors are drawn into a poetic experience that blends folklore with dark humor, offering a personalized “death horoscope” as a memento of the encounter.
+
+![A warm candle illuminates a printed strip of receipt paper containing a Starfish and a horoscope for March 14th.](https://github.com/nthmost/agatephone/blob/main/EB_photos/horoscope_yellow.jpg)
 
 ## For Engineers and Tech Art Enthusiasts
 
@@ -20,17 +24,16 @@ Agatephone combines a vintage rotary phone, Asterisk-powered telephony, and Pyth
 ### Hardware
 
 * Minimal Linux box w/ low power draw
-* S100i (iaxy)
+* [S100i (iaxy)](https://www.voipon.co.uk/documents/digium_iaxy_brochure.pdf)
 * rotary phone
 * Bluetti EB3A power station
 * small USB thermal printer
 
 ### Software
 
-* Asterisk
-* artery-thermal (github repo)
+* [Asterisk telephony OSS](https://www.asterisk.org/)
+* [nthmost/artery-thermal](https://github.com/nthmost/artery-thermal) (github repo)
 * generated voice prompts via OpenAI TTS
-
 
 ## Project Overview
 
