@@ -1,4 +1,6 @@
-# Agatephone Project: The California Zodiac of Death
+# Elysium Bell: Connecting Voices Across Eternity
+
+## The Agatephone project
 
 Imagine a rotary phone whose base and handset are made mostly out of solid agate.
 
